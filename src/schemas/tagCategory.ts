@@ -1,22 +1,16 @@
-import {TAG_DOCUMENT_NAME, CATEGORY_DOCUMENT_NAME} from '../constants'
+import {CATEGORY_DOCUMENT_NAME} from '../constants'
 import TagIcon from '../components/TagIcon'
 
 export default {
-  title: 'Media Tag',
+  title: 'Media Tag Category',
   icon: TagIcon,
-  name: TAG_DOCUMENT_NAME,
+  name: CATEGORY_DOCUMENT_NAME,
   type: 'document',
   fields: [
     {
       title: 'Name',
       name: 'name',
       type: 'slug'
-    },
-    {
-      title: 'Category',
-      name: 'category',
-      type: 'reference',
-      to: [{type: CATEGORY_DOCUMENT_NAME}]
     }
   ],
   preview: {
