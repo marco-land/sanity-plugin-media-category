@@ -1,4 +1,4 @@
 module.exports = {
-  '**/*.{js,jsx}': ['eslint'],
-  '**/*.{ts,tsx}': ['eslint', () => 'tsc --noEmit'],
+  '**/*.{js,jsx}': ['eslint --ignore-pattern "dist/*"'],
+  '**/*.{ts,tsx}': ['eslint --ignore-pattern "dist/*"', () => 'tsc --noEmit']
 }
